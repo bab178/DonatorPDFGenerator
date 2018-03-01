@@ -89,7 +89,7 @@ namespace DonatorPDFGenerator
                 else
                 {
                     image.Alignment = 1;
-                    image.ScalePercent(0.5f);
+                    image.ScalePercent(50f);
                     return image;
                 }
             }
