@@ -10,6 +10,12 @@ namespace DonatorPDFGenerator
 {
     public static class PDFManager
     {
+        private const string _websiteString = "www.example.com\r\n\r\n";
+        private const string _addressString = "123 Street St.\r\nCool Town, TX 77777\r\n(800) 123 - 1234";
+        private const string _donationThankYouMessage = "_____ would like to thank you for your very generous donation.\n\n";
+        private const string _nonProfitMessage = "_____ Non-Profit has received the following from {0}:\r\n\r\n";
+        private const string _tradeMarkAndDisclaimer = "\r\nWe affirm that no goods or services have been provided to you, in whole or in part, in consideration for your contribution.\r\nThis document is property of ________™.\r\nAny unauthorized use is strictly prohibited.";
+        private const string _logoPath = "Images\\logo.jpg";
 
         private static BaseFont _baseFont = BaseFont.CreateFont("Helvetica", "Cp1252", false);
         private static Font _normalFont = new Font(_baseFont, 12f, 1, BaseColor.BLACK);
